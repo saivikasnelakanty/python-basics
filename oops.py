@@ -14,34 +14,37 @@
 # print(emp_mohit[2])
 # print(emp_kiran[3])
 
-#Template
-class Employee:
-    def __init__(self, name, age, marks, fruit):  #dunder methods (shortcut is "__")
+# Template
+class Employeer:
+    def __init__(self, name, age, marks, fruit):  # dunder methods (shortcut is "__")
         self.name = name
         self.age = age
         self.marks = marks
         self.fruit = fruit
 
-    def get_name(self):  
+    def get_name(self):
         return self.name + "_zenoti"
-    
+
     def get_grade(self):
         if self.marks >= 60:
-            return("A")
+            return ("A")
         else:
-            return("B")
+            return ("B")
 
     def get_fruit_juice(self):
-        return(self.fruit) + "_juice"
+        return (self.fruit) + "_juice"
 
-emp_vikas = Employee("vikas", 25, 50, "watermelon")
+
+emp_vikas = Employeer("vikas", 25, 50, "watermelon")
 # print(emp_vikas.name)
 print(emp_vikas.name, emp_vikas.marks, emp_vikas.fruit, emp_vikas.age)
 
-emp_raja = Employee("vijay", 27, 87, "mango")
+emp_raja = Employeer("vijay", 27, 87, "mango")
 print(emp_raja.name, emp_raja.marks, emp_raja.fruit, emp_raja.age)
 print(emp_vikas.get_name())
 print(emp_vikas.name)
 print(emp_vikas.get_grade())
-print(emp_raja.get_grade())
 print(emp_vikas.get_fruit_juice())
+print(emp_raja.get_grade())
+
+# vikas
